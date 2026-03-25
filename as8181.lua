@@ -6,11 +6,6 @@ local Lighting = game:GetService("Lighting")
 local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 
--- ============================================================
--- DELTA-COMPATIBLE UI LIBRARY (reemplaza WindUI)
--- Implementación propia compatible con Delta executor
--- Soporta: Toggle, Slider, Input, Button, Section, Paragraph
--- ============================================================
 
 local VxnityUI = {}
 VxnityUI.__index = VxnityUI
@@ -88,9 +83,7 @@ function VxnityUI:Notify(opts)
     end)
 end
 
--- ============================================================
--- CONSTRUCCIÓN DE VENTANA PRINCIPAL
--- ============================================================
+
 
 local ACCENT = Color3.fromHex("#9d56ff")
 local BG_DARK = Color3.fromRGB(3, 3, 3)
