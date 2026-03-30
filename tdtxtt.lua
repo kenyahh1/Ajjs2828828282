@@ -6,11 +6,6 @@ local Lighting = game:GetService("Lighting")
 local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 
--- ============================================================
--- DELTA-COMPATIBLE UI LIBRARY (reemplaza WindUI)
--- Implementación propia compatible con Delta executor
--- Soporta: Toggle, Slider, Input, Button, Section, Paragraph
--- ============================================================
 
 local VxnityUI = {}
 VxnityUI.__index = VxnityUI
@@ -1443,7 +1438,7 @@ local function LoadVxnityHub()
         Title = "asolixun react ",
         Desc = "W react",
         Callback = function()
-            currentReactPower = 9999999999999999999
+            currentReactPower = 99999999999999999999999999999999999999999999999999999999999999999999999
             enableReactHook()
             VxnityUI:Notify({ Title = "React Active", Desc = "asolixun react enabled", Icon = "zap" })
         end
@@ -1453,7 +1448,7 @@ local function LoadVxnityHub()
         Title = "marianito react ",
         Desc = "goated react?",
         Callback = function()
-            currentReactPower = 99999999999
+            currentReactPower = 999999999999999999999999999999999999999999999999999999999999999
             enableReactHook()
             VxnityUI:Notify({ Title = "React Active", Desc = "marianito react  enabled", Icon = "zap" })
         end
@@ -1464,18 +1459,18 @@ local function LoadVxnityHub()
        Title = "✝️ - React Kenyah",
        Desc = "El mejor react 200 ms",
        Callback = function()
-        currentReactPower = 999999999999999999999999
+        currentReactPower = 999999999999999999999999999999999999999999999999999999999999999999999999999999
         enableReactHook()
         VxnityUI:Notify({ Title = "React Active", Desc = "React Kenyah enabled", Icon = "zap" })
         -- Additional settings for improved ball control
         setBallStickiness(true)
         setBallDelay(00000000000.01)
         setBallObedience(true)
-        setBallVectorSpeed(999999999999999999999999999) -- Increased speed
+        setBallVectorSpeed(999999999999999999999999999999999999999999999999999999999999999999) -- Increased speed
         -- New settings for enhanced invisibility and speed
         setReachVisibility(false)
         setReachRange(0)
-        setBallSpeed(9999999999999999999999999999999999) -- Further increased ball speed
+        setBallSpeed(999999999999999999999999999999999999999999999999999999999999) -- Further increased ball speed
         setBallStickinessToPlayer(true) -- Ensure the ball stays close to the player
         setBallTouchCount(true) -- Count all touches
     end
@@ -1484,7 +1479,7 @@ local function LoadVxnityHub()
     Title = "⚡ - No delay",
     Desc = "0 Delay",
     Callback = function()
-        currentReactPower = 999999999999999999999999
+        currentReactPower = 9999999999999999999999999999999999999
         enableReactHook()
         VxnityUI:Notify({ Title = "no delay react Active", Desc = "/@//@", Icon = "zap" })
         
@@ -1496,7 +1491,7 @@ local function LoadVxnityHub()
         -- Ajuste de velocidad extremo
         setBallVectorSpeed(999999999999999999999999999)
         setReachVisibility(false)
-        setsetReachRange(0) -- 0 Reach literal
+        setsetReachRange(0.000001) -- 0 Reach literal
         setBallSpeed(9999999999999999999999999999999999)
         
         -- Configuración de regateo (Dribble)
@@ -1515,15 +1510,15 @@ local function LoadVxnityHub()
         VxnityUI:Notify({ Title = "no delay react Active", Desc = "/@//@", Icon = "zap" })
         
         -- Configuración de velocidad y control
-        setBallDelay(0.0000000000000000000001) -- 0 Delay literal
+        setBallDelay(0.000000000000000000001) -- 0 Delay literal
         setBallStickiness(true)
         setBallObedience(true)
         
         -- Ajuste de velocidad extremo
-        setBallVectorSpeed(999999999999999999999999999)
+        setBallVectorSpeed(999999999999999999999999999999999999999999999999999999999999999999)
         setReachVisibility(false)
-        setsetReachRange(0) -- 0 Reach literal
-        setBallSpeed(9999999999999999999999999999999999)
+        setsetReachRange(0.00001) -- 0 Reach literal
+        setBallSpeed(99999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
         
         -- Configuración de regateo (Dribble)
         setBallStickinessToPlayer(true)
@@ -1552,8 +1547,8 @@ local function LoadVxnityHub()
             local ballScript = ball:FindFirstChild("BallScript")
             if ballScript then
                 ballScript:SetAttribute("InterpolationTime", 0)
-                ballScript:SetAttribute("MaxSpeed", 1000)
-                ballScript:SetAttribute("Acceleration", 50)
+                ballScript:SetAttribute("MaxSpeed", 19999999999999999999999999999999999999999999999999999000)
+                ballScript:SetAttribute("Acceleration", 5999999999999999999999999999999999999999999999999999999999999999990)
                 ballScript:SetAttribute("Friction", 0.1)
             end
             
@@ -1587,9 +1582,9 @@ local function LoadVxnityHub()
             -- Modificar velocidad y control a niveles extremos
             local ballScript = ball:FindFirstChild("BallScript")
             if ballScript then
-                ballScript:SetAttribute("InterpolationTime", -0.01) -- Delay negativo
-                ballScript:SetAttribute("MaxSpeed", 5000) -- Velocidad 5x mayor
-                ballScript:SetAttribute("Acceleration", 200) -- Aceleración instantánea
+                ballScript:SetAttribute("InterpolationTime", -0.0000000001) -- Delay negativo
+                ballScript:SetAttribute("MaxSpeed", 50099999999999999999999999999999999999999999999999999990) -- Velocidad 5x mayor
+                ballScript:SetAttribute("Acceleration", 20999999999999999999999999999999999999999999999999999999999999999990) -- Aceleración instantánea
                 ballScript:SetAttribute("Friction", 0.01) -- Mínima fricción
                 ballScript:SetAttribute("Bounciness", 0.95) -- Máximo rebote
                 ballScript:SetAttribute("GravityFactor", 0.1) -- Reducción de gravedad
@@ -1627,10 +1622,10 @@ local function LoadVxnityHub()
     })
         
         ReactTab:Button({
-    Title = "🔥 - Lua del Diablo",
-    Desc = "MAX POWER + 0 Delay + 0 Reach + DRIBBLE ILEGAL",
+    Title = "🔥 - Mizaku",
+    Desc = " + 0 Delay + 0 Reach",
     Callback = function()
-        currentReactPower = 999999999999999999999999
+        currentReactPower = 9999999999999999999999999999999999999
         enableReactHook()
         VxnityUI:Notify({ Title = "React Kenyah Active", Desc = "Velocidad extrema y control absoluto", originalDesc = "Configuración brutal para Street Soccer", Icon = "zap" })
         
@@ -1640,15 +1635,15 @@ local function LoadVxnityHub()
         setBallObedience(true)
         
         -- Ajuste de velocidad extremo
-        setBallVectorSpeed(999999999999999999999999999)
+        setBallVectorSpeed(999999999999999999999393939999999999999999999999999999999999999999999999999999999999999999992992929293939939393939399999999)
         setReachVisibility(false)
         setReachRange(0)
-        setBallSpeed(9999999999999999999999999999999999)
+        setBallSpeed(99999999999999999999999999999999999999999999999999999999999999393939293929399339939999999999999)
         
         -- Configuración de regateo (Dribble)
         setBallStickinessToPlayer(true)
         setBallTouchCount(true)
-        setBallTurnSpeed(9999999999999999999999999999999999999999999999999)
+        setBallTurnSpeed(9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
     end
     })
     
@@ -2136,7 +2131,7 @@ local function LoadVxnityHub()
     HelpersTab:Slider({
     Title = "Follow Distance",
     Min = 0,
-    Max = 20,
+    Max = 100,
     Default = 12,
     Callback = function(val)
         CONFIG.DEAD_ZONE = val
