@@ -91,18 +91,18 @@ Tabs.Info:Paragraph({
 })
 Tabs.Info:Paragraph({
     Title = "Última actualización",
-    Content = "2026 — Reach / Mossing / Reacts refactored",
+    Content = "2026 — Reach / Mossing / On top",
 })
 
 local reachEnabled = false
 local reachDistance = 1
 local reachConnection
 
-Tabs.Reach:Section({ Title = "Leg Reach (Method A)" })
+Tabs.Reach:Section({ Title = " [+] Leg Reach" })
 
 Tabs.Reach:Toggle({
     Title = "FireTouchInterest",
-    Description = "Activa contacto automático con el balón",
+    Description = "te cojen",
     Default = false,
     Callback = function(state)
         reachEnabled = state
@@ -140,18 +140,18 @@ Tabs.Reach:Toggle({
 
 Tabs.Reach:Slider({
     Title = "Reach Distance",
-    Description = "Rango de activación",
+    Description = " [+] ",
     Min = 1, Max = 15, Default = 1,
     Callback = function(val)
         reachDistance = tonumber(val)
     end
 })
 
-Tabs.Reach:Section({ Title = "Leg Hitbox (Method B)" })
+Tabs.Reach:Section({ Title = " [+] Leg Hitbox" })
 
 Tabs.Reach:Input({
     Title = "Hitbox R6",
-    Description = "Tamaño de piernas R6",
+    Description = "[+] R6",
     Default = "1",
     Callback = function(val)
         local v = tonumber(val) or 1
@@ -172,7 +172,7 @@ Tabs.Reach:Input({
 
 Tabs.Reach:Input({
     Title = "Hitbox R15",
-    Description = "Tamaño de piernas R15",
+    Description = "[+]  R15",
     Default = "1",
     Callback = function(val)
         local v = tonumber(val) or 1
@@ -193,7 +193,7 @@ Tabs.Reach:Input({
 
 Tabs.Reach:Button({
     Title = "Fake Legs (Appear Normal)",
-    Description = "Piernas grandes invisibles, apariencia normal",
+    Description = "[+] Piernas grandes invisibles o apariencia normal",
     Callback = function()
         local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
         local hum  = char:WaitForChild("Humanoid")
@@ -270,8 +270,8 @@ end
 Tabs.Mossing:Section({ Title = "Head Reach" })
 
 Tabs.Mossing:Toggle({
-    Title = "Active Moss Reach",
-    Description = "Rango de cabeza para mossing",
+    Title = "[+]  Moss Reach",
+    Description = "Rango de cabeza para mossear e.e",
     Default = false,
     Callback = function(state)
         headReachEnabled = state
@@ -379,7 +379,7 @@ Tabs.Reacts:Button({
 })
 
 Tabs.Reacts:Button({
-    Title = "asolixun react",
+    Title = "[+] asolixun react",
     Description = "W react",
     Callback = function()
         currentReactPower = 9999999999999999
@@ -389,7 +389,7 @@ Tabs.Reacts:Button({
 })
 
 Tabs.Reacts:Button({
-    Title = "marianito react",
+    Title = " [+] marianito react",
     Description = "goated react",
     Callback = function()
         currentReactPower = 99999999999
@@ -399,7 +399,7 @@ Tabs.Reacts:Button({
 })
 
 Tabs.Reacts:Button({
-    Title = "🔴  Desactivar React",
+    Title = "🔴 [-]  Desactivar React",
     Description = "Apaga todos los reacts",
     Callback = function()
         currentReactPower = 0
